@@ -10,7 +10,9 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar className='fs-4'><Link className='text-decoration-none' to='/'>Skills Insight</Link></Navbar>
+                <Navbar className='fs-4'>
+                    <img src={require('./logo.png')} clas />
+                    <Link className='text-decoration-none fw-bold' to='/'>Skills Insight</Link></Navbar>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto ms-5">
@@ -23,6 +25,7 @@ const Header = () => {
                             Dark Mode
                         </Nav.Link>
                         <Button variant="outline-info mx-5"><Link className='text-decoration-none text-white' to="/login">Log in</Link></Button>
+                        {/* <Button variant="outline-info mx-5"><Link className='text-decoration-none text-white' to="/login">Log out</Link></Button> */}
                         <Nav.Link>
                             Dark Mode
                         </Nav.Link>

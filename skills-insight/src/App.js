@@ -1,6 +1,5 @@
 import './App.css';
 import { Toaster } from 'react-hot-toast';
-import Blogs from './Components/Blogs/Blogs';
 import { RouterProvider } from 'react-router-dom';
 import { Routers } from './Components/Routes/Routers';
 

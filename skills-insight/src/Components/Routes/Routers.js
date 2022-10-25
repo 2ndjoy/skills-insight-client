@@ -4,8 +4,8 @@ import Courses from '../Courses/Courses';
 import Faq from '../Faq/Faq';
 import Home from '../Home/Home';
 import Main from '../Layouts/Main';
-import Login from '../LoginAndRegister/Login';
-import Register from '../LoginAndRegister/Register';
+import LogIn from '../LoginRegister/LogIn';
+import Register from '../LoginRegister/Register';
 export const Routers = createBrowserRouter([
     {
         path: '/',
@@ -31,7 +31,7 @@ export const Routers = createBrowserRouter([
             },
             {
                 path: '/login',
-                element: <Login></Login>
+                element: <LogIn></LogIn>
             },
             {
                 path: '/register',

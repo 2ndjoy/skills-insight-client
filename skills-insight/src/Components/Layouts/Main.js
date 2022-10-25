@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import DarkMode from '../DarkMode/DarkMode';
 import Header from '../Header/Header';
 
 const Main = () => {

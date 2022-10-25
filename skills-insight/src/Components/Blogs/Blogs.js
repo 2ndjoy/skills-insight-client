@@ -31,7 +31,6 @@ const Blogs = () => {
                     It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.
                 </Accordion.Body>
             </Accordion.Item>
-
         </Accordion>
     );
 };

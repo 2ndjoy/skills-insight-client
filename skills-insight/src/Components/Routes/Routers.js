@@ -7,6 +7,7 @@ import Home from '../Home/Home';
 import Main from '../Layouts/Main';
 import LogIn from '../LoginRegister/LogIn';
 import Register from '../LoginRegister/Register';
+import ProcedPage from '../ProcedPage/ProcedPage';
 import Subscriiption from '../Subsciption/Subscriiption';
 export const Routers = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ export const Routers = createBrowserRouter([
                 path: '/subscription',
                 loader: () => fetch(`http://localhost:5000/packages`),
                 element: <Subscriiption></Subscriiption>
+            },
+            {
+                path: '/proced',
+                element: <ProcedPage></ProcedPage>
             }
         ]
     }

@@ -1,23 +1,28 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/esm/Button';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import Container from 'react-bootstrap/esm/Container';
 
 const SubscriptionCard = ({ pack }) => {
     const { id, price, inside, title } = pack;
+    const handleToast = () => {
+        toast.success('Successfully Purchased!')
+    }
     return (
-        <div>
+        <Container className='d-flex justify-content-center'>
             <Card style={{ width: '18rem' }}>
                 <Card.Header className='text-success fw-bold'>{title}</Card.Header>
                 <Card.Body>
-                    <Card.Title className='text-success'>Price: ${price}</Card.Title>
+                    <Card.Title className='text-success'>Price: ${price}/monthly</Card.Title>
                     <Card.Text className='text-success'>
                         {inside}
                     </Card.Text>
-                    <Button variant="outline-success">Success</Button>
+                    <Link to='/proced'><Button onClick={handleToast} variant="outline-success">Buy</Button></Link>
                 </Card.Body>
             </Card>
-        </div>
+        </Container>
     );
 };
 

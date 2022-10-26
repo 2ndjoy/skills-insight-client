@@ -10,13 +10,14 @@ const Subscriiption = () => {
     console.log(packagesForSubscription)
     return (
         <div>
-            <h2>Subscription</h2>
-            {
-                packagesForSubscription.map(pack => <SubscriptionCard
-                    key={pack.id}
-                    pack={pack}></SubscriptionCard>)
-            }
-
+            <h2 className='text-center my-5'>Our Packages</h2>
+            <div className='d-flex gap-4 justify-content-center my-5'>
+                {
+                    packagesForSubscription.map(pack => <SubscriptionCard
+                        key={pack.id}
+                        pack={pack}></SubscriptionCard>)
+                }
+            </div>
         </div>
     );
 };

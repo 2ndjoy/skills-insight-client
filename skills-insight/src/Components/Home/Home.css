@@ -1,6 +1,28 @@
 .bgbg {
-    background-image: url('https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-image: url('./learning\ robot\ background\ dark.png');
 
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.purple {
+    color: rgb(38, 210, 141);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.purple:hover {
+    color: rgb(88, 158, 177);
+
+}
+
+/* .yellow {
+    color: rgb(38, 53, 34);
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.yellow:hover {
+    color: rgb(40, 26, 44);
+
+} */

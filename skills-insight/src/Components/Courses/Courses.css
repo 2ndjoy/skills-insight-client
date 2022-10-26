@@ -28,3 +28,14 @@
         grid-template-columns: auto;
     }
 }
+
+/* 
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5rem;
+        margin-top: 6rem;
+        margin-right: 10px;
+    }
+} */

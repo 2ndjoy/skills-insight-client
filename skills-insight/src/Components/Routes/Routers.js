@@ -26,12 +26,12 @@ export const Routers = createBrowserRouter([
             },
             {
                 path: '/courses',
-                loader: () => fetch(`http://localhost:5000/catagories`),
+                loader: () => fetch(`https://skills-insight-server.vercel.app/catagories`),
                 element: <Courses></Courses>
             },
             {
                 path: '/catagories/courses/:id',
-                loader: ({ params }) => fetch(`http://localhost:5000/catagories/courses/${params.id}`),
+                loader: ({ params }) => fetch(`https://skills-insight-server.vercel.app/catagories/courses/${params.id}`),
                 element: <Course></Course>
             },
             {
@@ -48,7 +48,7 @@ export const Routers = createBrowserRouter([
             },
             {
                 path: '/subscription',
-                loader: () => fetch(`http://localhost:5000/packages`),
+                loader: () => fetch(`https://skills-insight-server.vercel.app/packages`),
                 element: <Subscriiption></Subscriiption>
             },
             {

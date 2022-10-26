@@ -1,54 +1,53 @@
 import React, { useEffect, useState } from 'react';
+import Button from 'react-bootstrap/esm/Button';
+import Col from 'react-bootstrap/esm/Col';
+import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/esm/Row';
 import { Link, useLoaderData } from 'react-router-dom';
-import CategoryCard from './CategoryCard';
 import CourseCard from './CourseCard';
-// import CourseCard from './CourseCard';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import './Courses.css'
-import Button from 'react-bootstrap/Button';
 
 
-
-
-const Courses = () => {
-    const categoryCourses = useLoaderData();
-    const [categories, setCategories] = useState([]);
+const Course = () => {
+    const courseS = useLoaderData();
+    const [categoryCourses, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/courses')
+        fetch('http://localhost:5000/catagories')
             .then(res => res.json())
             .then(data => setCategories(data));
     }, [])
     return (
         <Container className='d-flex mx-5 my-5'>
+
             <Row >
                 <Col>
                     <div>
                         {
                             categoryCourses.map(courses => <Link className=' text-decoration-none' to={`/catagories/courses/${courses.id}`}> <p className='grid border border-primary rounded p-2'>{courses.name}</p></Link>)
                         }
+                        <Link to='/courses'><Button>See All Courses</Button></Link>
+
                     </div>
                 </Col>
                 <Col sm={8}>
-
                     <div className='grid-container'>
                         {
-                            categories.map(category => <CategoryCard
-                                key={category.id}
-                                category={category}>
-
-                            </CategoryCard>)
+                            courseS.map(
+                                course =>
+                                    <CourseCard
+                                        key={course.id}
+                                        course={course}
+                                    ></CourseCard>
+                            )
                         }
                     </div>
                 </Col>
             </Row>
 
+
         </Container>
+
     );
 };
 
-export default Courses;
+export default Course;

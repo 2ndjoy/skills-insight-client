@@ -21,7 +21,7 @@ const Course = () => {
 
             <Row >
                 <Col>
-                    <div>
+                    <div className='catagory-container'>
                         {
                             categoryCourses.map(courses => <Link className=' text-decoration-none' to={`/catagories/courses/${courses.id}`}> <p className='grid border border-primary rounded p-2'>{courses.name}</p></Link>)
                         }

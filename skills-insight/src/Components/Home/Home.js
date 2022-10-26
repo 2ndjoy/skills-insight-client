@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 const Home = () => {
     return (
-        <div className='bgbg text-right p-5'>
+        <div className='bgbg p-5'>
             <h2 className='text-4xl purple fw-bolder my-5'>
                 Learn what you want <br />
                 with free and budget friendly subscription
@@ -12,7 +12,7 @@ const Home = () => {
                 <br />skills <br />
                 with us
             </h2>
-            <div className=' text-center mt-5 p-5'>
+            <div className=' float-right mt-5 p-5'>
                 <h4 className='text-warning text-2xl fw-bolder '>
                     We have best teacher who will help you
                     <br />

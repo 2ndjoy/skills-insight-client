@@ -11,7 +11,7 @@ const Subscriiption = () => {
     return (
         <div>
             <h2 className='text-center my-5'>Our Packages</h2>
-            <div className='d-flex gap-4 justify-content-center my-5'>
+            <div className='grid-subscription-container'>
                 {
                     packagesForSubscription.map(pack => <SubscriptionCard
                         key={pack.id}

@@ -2,4 +2,29 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 5rem;
+    margin-left: 50px;
+}
+
+.grid-subscription-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5rem;
+        margin-top: 6rem;
+        margin-right: 10px;
+    }
+
+    .catagory-container {
+        margin-right: 40px;
+    }
+
+    .grid-subscription-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }

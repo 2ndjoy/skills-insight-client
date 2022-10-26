@@ -27,7 +27,7 @@ const Courses = () => {
         <Container className='d-flex mx-5 my-5'>
             <Row >
                 <Col>
-                    <div>
+                    <div className='catagory-container'>
                         {
                             categoryCourses.map(courses => <Link className=' text-decoration-none' to={`/catagories/courses/${courses.id}`}> <p className='grid border border-primary rounded p-2'>{courses.name}</p></Link>)
                         }

@@ -55,6 +55,10 @@ export const Routers = createBrowserRouter([
             {
                 path: '/proced',
                 element: <ProcedPage></ProcedPage>
+            },
+            {
+                path: '*',
+                element: <div className='my-5 p-5'><h1 className='my-5 text-center p-5'>404!! Page not found</h1></div>
             }
         ]
     }

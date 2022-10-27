@@ -1,37 +1,13 @@
 import React from "react";
+import { FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => <footer className="footer bg-primary mt-5 text-white pt-4">
-    {/* <div className="container-fluid text-center text-md-left">
-        <div className="row">
-            <div className="col-md-6 mt-md-0 mt-3">
-                <h5 className="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns to organize your footer content.</p>
-            </div>
-
-            <hr className="clearfix w-100 d-md-none pb-0"/>
-
-            <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Links</h5>
-                <ul className="list-unstyled">
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
-                </ul>
-            </div>
-
-            <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Links</h5>
-                <ul className="list-unstyled">
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
-                </ul>
-            </div>
-        </div>
-    </div> */}
-
+    <p className="text-center">Follow us on social media</p>
+    <div className="d-flex my-1 justify-content-around gap-5">
+        <a className="text-white" href="https://www.facebook.com/"><FaFacebook></FaFacebook></a>
+        <a className="text-white" href="https://www.twitter.com/"><FaTwitter></FaTwitter></a>
+        <a className="text-white" href="https://www.youtube.com/"><FaYoutube></FaYoutube></a>
+    </div>
     <div className="footer-copyright text-center py-3">© 2020 Copyright
     </div>
 

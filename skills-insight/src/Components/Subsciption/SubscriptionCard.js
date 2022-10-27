@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import Container from 'react-bootstrap/esm/Container';
 
 const SubscriptionCard = ({ pack }) => {
-    const { id, price, inside, title } = pack;
+    const { id, price, inside, title, facilities } = pack;
     const handleToast = () => {
         toast.success('Successfully Purchased!')
     }
@@ -17,7 +17,7 @@ const SubscriptionCard = ({ pack }) => {
                 <Card.Body>
                     <Card.Title className='text-success'>Price: ${price}/monthly</Card.Title>
                     <Card.Text className='text-success'>
-                        {inside}
+                        {facilities}
                     </Card.Text>
                     <Link to='/proced'><Button onClick={handleToast} variant="outline-success">Buy</Button></Link>
                 </Card.Body>

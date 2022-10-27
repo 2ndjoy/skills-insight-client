@@ -19,7 +19,7 @@ const Home = () => {
                     to achieve your essential skills
                 </h4>
             </div>
-            <div className='d-flex justify-content-center gap-3'>
+            <div className='d-flex justify-content-center gap-3 p-5'>
                 <Link to='/courses'><button className='btn btn-success mb-t text-2xl'>Explore our courses</button></Link>
                 <Link to='/subscription'><button className='btn btn-success mb-t text-2xl'>Explore our Packages</button></Link>
             </div>

@@ -14,7 +14,7 @@ const CourseCard = ({ course }) => {
                     <Card.Text>
                         {details}
                     </Card.Text>
-                    <Link to='/subscription'><Button variant="primary">Start Course</Button></Link>
+                    <Link to='/subscription'><Button variant="primary">Get premium access</Button></Link>
                 </Card.Body>
             </Card>
 

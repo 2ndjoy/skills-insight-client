@@ -9,9 +9,9 @@ const Subscriiption = () => {
     const packagesForSubscription = useLoaderData();
     console.log(packagesForSubscription)
     return (
-        <div>
+        <div className='my-5 mb-5'>
             <h2 className='text-center my-5'>Our Packages</h2>
-            <div className='grid-subscription-container'>
+            <div className='grid-subscription-container my-5 mb-5'>
                 {
                     packagesForSubscription.map(pack => <SubscriptionCard
                         key={pack.id}

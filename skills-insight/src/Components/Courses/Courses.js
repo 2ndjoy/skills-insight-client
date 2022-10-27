@@ -35,7 +35,7 @@ const Courses = () => {
                 </Col>
                 <Col sm={8}>
 
-                    <div className='grid-container'>
+                    <div className='card-group gap-5'>
                         {
                             categories.map(category => <CategoryCard
                                 key={category.id}

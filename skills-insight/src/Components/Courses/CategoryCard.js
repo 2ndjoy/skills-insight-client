@@ -15,7 +15,7 @@ const CategoryCard = ({ category }) => {
                         {details}
                     </Card.Text>
                     <Link to='/subscription'>
-                        <Button variant="primary">Start Learning</Button>
+                        <Button variant="primary">Get premium access</Button>
                     </Link>
                 </Card.Body>
             </Card>

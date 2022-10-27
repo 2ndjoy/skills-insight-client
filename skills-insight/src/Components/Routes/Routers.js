@@ -9,6 +9,7 @@ import LogIn from '../LoginRegister/LogIn';
 import Register from '../LoginRegister/Register';
 import ProcedPage from '../ProcedPage/ProcedPage';
 import Subscriiption from '../Subsciption/Subscriiption';
+import PrivateRoute from './PrivateRoute';
 export const Routers = createBrowserRouter([
     {
         path: '/',
@@ -49,7 +50,7 @@ export const Routers = createBrowserRouter([
             {
                 path: '/subscription',
                 loader: () => fetch(`https://skills-insight-server.vercel.app/packages`),
-                element: <Subscriiption></Subscriiption>
+                element: <PrivateRoute><Subscriiption></Subscriiption></PrivateRoute>
             },
             {
                 path: '/proced',
